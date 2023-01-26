@@ -20,6 +20,8 @@ app.use(express.static(path.join(_dirname, 'public')));
 
 app.use('/', routes);
 app.use('/contactcs', contactcs);
+app.use('/users', users);
+app.usu('/groups', groups);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
